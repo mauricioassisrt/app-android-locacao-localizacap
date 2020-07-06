@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "244427269515",
+    "firebase_url": "https://androidlocacao.firebaseio.com",
+    "project_id": "androidlocacao",
+    "storage_bucket": "androidlocacao.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:244427269515:android:e843efa81a7a836218fb8e",
+        "android_client_info": {
+          "package_name": "br.com.myapplication"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "244427269515-0medme60anj2l8386hmrlojbape0ubju.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "br.com.myapplication",
+            "certificate_hash": "824d82d3d3ec0c8a178438ede5965adcc7adae27"
+          }
+        },
+        {
+          "client_id": "244427269515-n8ons36tdtcag527r2n9qnfthuglib7n.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB-1JG_GO6Q2hm-B8TZcw7BiaeeZEtbe6g"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "244427269515-n8ons36tdtcag527r2n9qnfthuglib7n.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,122 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:map="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <fragment
+        android:id="@+id/map"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_width="match_parent"
+        android:layout_height="266dp"
+        android:layout_margin="15px"
+        tools:context=".MapsActivity" />
+
+
+    <EditText
+        android:id="@+id/editEndereco"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_x="2dp"
+        android:layout_y="232dp"
+        android:ems="10"
+        android:layout_margin="15px"
+        android:inputType="textPersonName"
+        android:hint="Endereço da locação "
+        tools:layout_editor_absoluteX="7dp"
+        tools:layout_editor_absoluteY="398dp" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_x="3dp"
+
+        android:layout_y="310dp"
+        android:layout_margin="15px"
+        android:text="Clientes" />
+
+    <Spinner
+        android:id="@+id/spinner"
+        android:layout_width="638dp"
+        android:layout_margin="15px"
+        android:layout_height="34dp"
+        android:layout_x="2dp"
+        android:layout_y="339dp"
+        android:autofillHints="Clientes"
+        android:orientation="vertical"
+        tools:layout_editor_absoluteX="8dp"
+        tools:layout_editor_absoluteY="589dp" />
+
+    <EditText
+        android:id="@+id/editDataLocacao"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_x="1dp"
+        android:layout_y="380dp"
+        android:layout_margin="15px"
+        android:ems="10"
+        android:hint="Data da Locação "
+        android:inputType="date"
+        android:orientation="vertical"
+        tools:layout_editor_absoluteX="8dp"
+        tools:layout_editor_absoluteY="307dp"
+         />
+
+    <EditText
+        android:id="@+id/editDatavencimento"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_x="1dp"
+        android:layout_margin="15px"
+        android:layout_y="441dp"
+        android:ems="10"
+        android:hint="Data do vencimento"
+        android:inputType="date"
+
+        android:orientation="vertical"
+        tools:layout_editor_absoluteX="37dp"
+        tools:layout_editor_absoluteY="448dp" />
+
+    <EditText
+        android:id="@+id/editValorLocacao"
+        android:layout_width="597dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="15px"
+        android:layout_x="0dp"
+        android:layout_y="494dp"
+        android:ems="10"
+        android:hint="Valor R$ da locação "
+        android:inputType="number"
+        android:orientation="vertical" />
+
+
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="15px"
+        android:width="18px"
+        android:text="Equipamentos " />
+
+    <Spinner
+        android:id="@+id/spinner2"
+        android:layout_width="match_parent"
+        android:layout_margin="15px"
+        android:layout_height="39dp" />
+
+    <Button
+        android:id="@+id/salvarLocacao"
+        android:layout_width="match_parent"
+        android:layout_margin="15px"
+        android:layout_height="wrap_content"
+        android:layout_x="13dp"
+        android:layout_y="656dp"
+        android:onClick="save"
+        android:text="Salvar Locação " />
+
+</LinearLayout>

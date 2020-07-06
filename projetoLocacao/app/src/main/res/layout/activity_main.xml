@@ -1,0 +1,47 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <fragment
+        android:id="@+id/map3"
+        class="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_width="match_parent"
+        android:layout_height="467dp"
+        android:layout_margin="15px" />
+    <Button
+        android:id="@+id/chamaMaps"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="15px"
+        android:layout_marginTop="8dp"
+        android:gravity="center"
+        android:onClick="proximaTela"
+        android:text="Nova Locação"
+
+        />
+
+    <Button
+        android:id="@+id/btEquipamento"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="15px"
+        android:gravity="center"
+        android:text="Equipamentos"
+        android:onClick="equipamento"
+        tools:layout_editor_absoluteX="9dp"
+        tools:layout_editor_absoluteY="104dp" />
+
+    <Button
+        android:id="@+id/btnVencimentos"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:onClick="telaVecimentos"
+        android:layout_margin="15px"
+        android:text="Vencimentos" />
+
+</LinearLayout>

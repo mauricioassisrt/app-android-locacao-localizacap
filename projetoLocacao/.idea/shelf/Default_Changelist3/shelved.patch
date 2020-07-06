@@ -1,0 +1,30 @@
+Index: ../AgendaMaNeRa/app/build.gradle
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>apply plugin: 'com.android.application'\r\n\r\nandroid {\r\n    compileSdkVersion 29\r\n    buildToolsVersion \"29.0.3\"\r\n    defaultConfig {\r\n        applicationId \"com.jaguanhara.agendamanera\"\r\n        minSdkVersion 15\r\n        targetSdkVersion 29\r\n        versionCode 1\r\n        versionName \"1.0\"\r\n        testInstrumentationRunner \"androidx.test.runner.AndroidJUnitRunner\"\r\n    }\r\n    buildTypes {\r\n        release {\r\n            minifyEnabled false\r\n            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'\r\n        }\r\n    }\r\n}\r\n\r\ndependencies {\r\n    implementation fileTree(dir: 'libs', include: ['*.jar'])\r\n    implementation 'androidx.appcompat:appcompat:1.1.0'\r\n    implementation 'com.google.android.material:material:1.1.0'\r\n    implementation 'androidx.annotation:annotation:1.1.0'\r\n    implementation 'androidx.constraintlayout:constraintlayout:1.1.3'\r\n    implementation 'androidx.lifecycle:lifecycle-extensions:2.2.0'\r\n    implementation 'androidx.legacy:legacy-support-v4:1.0.0'\r\n    testImplementation 'junit:junit:4.12'\r\n    androidTestImplementation 'androidx.test:runner:1.2.0'\r\n    androidTestImplementation 'androidx.test.espresso:espresso-core:3.2.0'\r\n}\r\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- ../AgendaMaNeRa/app/build.gradle	(date 1587478673000)
++++ ../AgendaMaNeRa/app/build.gradle	(date 1587324562954)
+@@ -5,7 +5,7 @@
+     buildToolsVersion "29.0.3"
+     defaultConfig {
+         applicationId "com.jaguanhara.agendamanera"
+-        minSdkVersion 15
++        minSdkVersion 16
+         targetSdkVersion 29
+         versionCode 1
+         versionName "1.0"
+@@ -27,7 +27,11 @@
+     implementation 'androidx.constraintlayout:constraintlayout:1.1.3'
+     implementation 'androidx.lifecycle:lifecycle-extensions:2.2.0'
+     implementation 'androidx.legacy:legacy-support-v4:1.0.0'
++    implementation 'com.google.android.gms:play-services-maps:17.0.0'
+     testImplementation 'junit:junit:4.12'
+     androidTestImplementation 'androidx.test:runner:1.2.0'
+     androidTestImplementation 'androidx.test.espresso:espresso-core:3.2.0'
++    implementation 'com.google.android.gms:play-services-maps:17.0.0'
++    implementation 'com.google.android.gms:play-services-location:17.0.0'
++    implementation 'com.google.android.gms:play-services-location:17.0.0'
+ }

@@ -1,0 +1,56 @@
+Index: ../AgendaMaNeRa/app/src/main/AndroidManifest.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"utf-8\"?>\r\n<manifest xmlns:android=\"http://schemas.android.com/apk/res/android\"\r\n    package=\"com.jaguanhara.agendamanera\">\r\n\r\n    <application\r\n        android:allowBackup=\"true\"\r\n        android:icon=\"@mipmap/ic_launcher\"\r\n        android:label=\"@string/app_name\"\r\n        android:roundIcon=\"@mipmap/ic_launcher_round\"\r\n        android:supportsRtl=\"true\"\r\n        android:theme=\"@style/AppTheme\">\r\n        <activity android:name=\".Menu\" />\r\n        <activity android:name=\".Calendario\" />\r\n        <activity\r\n            android:name=\".ui.login.LoginActivity\"\r\n            android:label=\"@string/app_name\">\r\n            <intent-filter>\r\n                <action android:name=\"android.intent.action.MAIN\" />\r\n\r\n                <category android:name=\"android.intent.category.LAUNCHER\" />\r\n            </intent-filter>\r\n        </activity>\r\n\r\n        <meta-data\r\n            android:name=\"preloaded_fonts\"\r\n            android:resource=\"@array/preloaded_fonts\" />\r\n    </application>\r\n\r\n</manifest>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- ../AgendaMaNeRa/app/src/main/AndroidManifest.xml	(date 1587478673000)
++++ ../AgendaMaNeRa/app/src/main/AndroidManifest.xml	(date 1587685755381)
+@@ -2,6 +2,14 @@
+ <manifest xmlns:android="http://schemas.android.com/apk/res/android"
+     package="com.jaguanhara.agendamanera">
+ 
++    <!--
++         The ACCESS_COARSE/FINE_LOCATION permissions are not required to use
++         Google Maps Android API v2, but you must specify either coarse or fine
++         location permissions for the 'MyLocation' functionality.
++    -->
++    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
++    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
++    <uses-permission android:name="android.permission.ACCESS_BACKGROUND_LOCATION" />
+     <application
+         android:allowBackup="true"
+         android:icon="@mipmap/ic_launcher"
+@@ -9,6 +17,22 @@
+         android:roundIcon="@mipmap/ic_launcher_round"
+         android:supportsRtl="true"
+         android:theme="@style/AppTheme">
++
++        <!--
++             The API key for Google Maps-based APIs is defined as a string resource.
++             (See the file "res/values/google_maps_api.xml").
++             Note that the API key is linked to the encryption key used to sign the APK.
++             You need a different API key for each encryption key, including the release key that is used to
++             sign the APK for publishing.
++             You can define the keys for the debug and release targets in src/debug/ and src/release/.
++        -->
++        <meta-data
++            android:name="com.google.android.geo.API_KEY"
++            android:value="@string/google_maps_key" />
++
++        <activity
++            android:name=".MapsActivity"
++            android:label="@string/title_activity_maps"></activity>
+         <activity android:name=".Menu" />
+         <activity android:name=".Calendario" />
+         <activity
+@@ -24,6 +48,7 @@
+         <meta-data
+             android:name="preloaded_fonts"
+             android:resource="@array/preloaded_fonts" />
++
+     </application>
+ 
+ </manifest>
+\ No newline at end of file

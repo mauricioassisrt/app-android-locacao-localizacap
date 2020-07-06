@@ -1,0 +1,51 @@
+Index: ../AgendaMaNeRa/app/src/main/res/layout/activity_maps.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- ../AgendaMaNeRa/app/src/main/res/layout/activity_maps.xml	(date 1588031149489)
++++ ../AgendaMaNeRa/app/src/main/res/layout/activity_maps.xml	(date 1588031149489)
+@@ -0,0 +1,42 @@
++<LinearLayout
++    xmlns:android="http://schemas.android.com/apk/res/android"
++    xmlns:tools="http://schemas.android.com/tools"
++    android:layout_width="match_parent"
++    android:layout_height="400px"
++    android:orientation="vertical">
++
++    <TextView
++        android:id="@+id/textView3"
++        android:layout_width="match_parent"
++        android:layout_height="wrap_content"
++        android:text="Localização" />
++
++    <EditText
++        android:id="@+id/editEndereco"
++        android:layout_width="match_parent"
++        android:layout_height="wrap_content"
++        android:layout_margin="15px"
++        android:layout_x="2dp"
++        android:layout_y="232dp"
++        android:ems="10"
++        android:inputType="textPersonName"
++
++        tools:layout_editor_absoluteX="7dp"
++        tools:layout_editor_absoluteY="398dp" />
++
++    <TextView
++        android:id="@+id/textView5"
++        android:layout_width="match_parent"
++        android:layout_height="wrap_content"
++        android:text="País" />
++
++    <EditText
++        android:id="@+id/editPais"
++        android:layout_width="match_parent"
++        android:layout_height="wrap_content"
++        android:ems="10"
++        android:inputType="textPersonName"
++        android:text="" />
++
++
++</LinearLayout>
+\ No newline at end of file
