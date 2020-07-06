@@ -1,4 +1,5 @@
 # app-android-locacao-localizacao 
+2ª Atividade Avaliativa da disciplina da pós-graduação Desenvolvimento Mobile com Android <br/>
 
 O objetivo do aplicativo é :
 
@@ -9,5 +10,5 @@ Busca os equipamentos cadastrados e que nao possuem localização vinculadas.<br
 Vencimentos aparece os vencimentos diarios, onde o usuario pode finalizar e habilitar novamente um determinado equipamento para locação.<br/>
 No Dashboard aparece os equipamentos que estão vencidos para finalizar a locação <br/>
 
-o aplicativo envia notificações dos vencimentos diarios para o usuario diariamente 
+O aplicativo envia notificações dos vencimentos diarios para o usuario diariamente 
  
